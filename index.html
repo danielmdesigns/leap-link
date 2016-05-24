@@ -1,28 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Start Page - Page #1</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css.css">
+<title>Leap Link</title>
+<link rel="stylesheet" href="http://danielmdesigns.com/grid/grid.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Anonymous+Pro" rel="stylesheet" type="text/css">  
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body id="jumpback" class="gradient">
 
-<h1>Might as well, Jump!</h1>
+<body>
 
-<p>Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+<div class="container">
+  <main class="row">
+    
+<header class="col-1">
+  <svg class="brand" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 30.6 50" style="enable-background:new 0 0 30.6 50;" xml:space="preserve"><style type="text/css">.st0{fill:#55A1FB;}</style><g><path class="st0" d="M16.1,0.2c4,0.9,6.6,4.9,5.7,8.9L16.9,31l-3.7-0.8l4.9-21.9c0.4-2-0.8-4-2.8-4.4c-2-0.4-4,0.8-4.4,2.8
+  L5.8,29.4c0,0-0.1,0-0.1,0c-1.5,0.3-2.9,0.9-4.2,1.9L7.2,5.8C8.1,1.8,12.1-0.7,16.1,0.2z"/><path class="st0" d="M9.1,31.7l6.5,1.5l0,0l9.1,2c4,0.9,6.6,4.9,5.7,8.9c-0.9,4-4.9,6.6-8.9,5.7l-6.7-1.5l0,0l-2.9-0.6
+  c1.4-0.7,2.6-1.7,3.5-3.1l0.3,0.1l0,0l6.6,1.5c2,0.4,4-0.8,4.4-2.8c0.4-2-0.8-4-2.8-4.4L15.6,37l0,0l-7.3-1.6c-2-0.4-4,0.8-4.4,2.8
+  c-0.4,1.9,0.7,3.9,2.9,4.5c2,0.4,3.9-0.9,4.3-2.8l0.3-1.3l3.7,0.8l-0.3,1.3c-0.9,4-4.9,6.6-8.9,5.7c-4-0.9-6.6-4.9-5.7-8.9
+  C1.1,33.4,5.1,30.8,9.1,31.7z"/></g></svg>
+</header>
 
-<a href="page2.html" class="btn">Jump Now!</a>
-<a href="page2.html#jumphere" class="btn">Jump There!</a>
-
-<div class="code">
-<small>&#60; -- Insert Starting Point -- &#62;</small><br>
-'a href="abc.html#jumphere"'<br><br>
-<small>&#60; -- Insert Ending Point -- &#62;</small><br>
-'id="jumphere"'
+<div class="col-1">
+  <h1>Leap Link is an internal page jump that allows you to move quickly inside of a long page.</h1>
 </div>
-
-<p><a href="https://github.com/danielmdesigns/leap-link" target="_blank">Download from GitHub</a></p>
+<div class="col-1">
+  <a href="pg1.html" class="btn btn-primary btn-rounded">Examples</a>
+  <a href="https://github.com/danielmdesigns/leap-link" target="_blank" class="btn btn-ghost btn-rounded">View on GitHub</a>
+</div>
+<div class="col-1 text-left">
+  <h3>Usage&mdash;</h3>
+  <p><strong>1. </strong>Include a hashtag followed by a reference name to the href attribute of an anchor link element that will trigger the leap.</p>
+  <code>
+    <div class="code-gray">&lt;<div class="code-red">a</div></div><div class="code-green"> href<div class="code-gray">&equals;&quot;</div><div class="code-blue">#leaplink</div><div class="code-gray">&quot;&gt;</div><div class="code-navy">Leap Link</div><div class="code-gray">&lt;&#8725;<div class="code-red">a</div>&gt;</div></div>
+  </code>
+</div>
+<div class="col-1 text-left">
+  <p><strong>2. </strong>If you’re leaping to another page, simply include the hashtag followed by the reference name to the end of the page url in the anchor element.</p>
+  <code>
+    <div class="code-gray">&lt;<div class="code-red">a</div></div><div class="code-green"> href<div class="code-gray">&equals;&quot;</div><div class="code-blue">page.html#leaplink</div><div class="code-gray">&quot;&gt;</div><div class="code-navy">Leap Link</div><div class="code-gray">&lt;&#8725;<div class="code-red">a</div>&gt;</div></div>
+  </code>
+</div>
+<div class="col-1 text-left">
+  <p><strong>3. </strong>Have URLs that include UTMs for analytics? No problem! All you need to do is append the hashtag & reference name to the very end of the UTM string.</p>
+  <code>
+    <div class="code-gray">&lt;<div class="code-red">a</div></div><div class="code-green"> href<div class="code-gray">&equals;&quot;</div><div class="code-blue">page.html?utm_source=link&utm_medium=email#leaplink</div><div class="code-gray">&quot;&gt;</div><div class="code-navy">Leap Link</div><div class="code-gray">&lt;&#8725;<div class="code-red">a</div>&gt;</div></div>
+  </code>
+</div>
+<div class="col-1 text-left">
+  <p><strong>4. </strong>To make it all work; provide an id (#) attribute with the corresponding reference name to the element that the link will need to leap to. This is the same for internal && external leaping.</p>
+  <code>
+    <div class="code-gray">&lt;<div class="code-red">div</div></div><div class="code-green"> id<div class="code-gray">&equals;&quot;</div><div class="code-blue">leaplink</div><div class="code-gray">&quot;&gt;</div><div class="code-navy">Leap Link Section</div><div class="code-gray">&lt;&#8725;<div class="code-red">div</div>&gt;</div></div>
+  </code>
+</div>
+<div class="col-1">
+  <footer>
+  	<p>Made by <a class="link" href="http://www.danielmdesigns.com" target="_blank">Daniel Maldonado</a></p>
+  </footer>
+</div>
+    
+  </main>
+</div>
 
 </body>
 </html>
